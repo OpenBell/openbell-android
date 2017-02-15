@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2016-17 Open Bell Project, and others
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Contributors:
+  WLD-Sebastian R
+  WLD-Paul J
+  WLD-Muj H
+
+  Updated: 2/15/17 3:47 AM
+  -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_about"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="org.openbell.sdk.ActivityAbout">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textView6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:text="@string/app_name"
+				android:textAlignment="center"
+				android:textAllCaps="false"
+				android:textDirection="anyRtl"
+				android:textSize="20sp"
+				android:textStyle="normal|bold" />
+			<TextView
+				android:id="@+id/textViewVersion"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:text="@string/app_version"
+				android:textAlignment="center" />
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:maxWidth="300dp"
+				android:adjustViewBounds="true"
+				android:src="@drawable/logo" />
+			<TextView
+				android:id="@+id/textView7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:text="@string/license_name"
+				android:textAlignment="center" />
+			<TextView
+				android:id="@+id/textView9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:autoLink="web"
+				android:text="@string/source_code"
+				android:textAlignment="center" />
+			<TextView
+				android:id="@+id/textView11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:autoLink="web"
+				android:text="@string/home_page"
+				android:textAlignment="center" />
+			<TextView
+				android:id="@+id/textView3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:text="@string/freesound_text"
+				android:textAlignment="center" />
+			<TextView
+				android:id="@+id/textView8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="20dp"
+				android:autoLink="web"
+				android:text="@string/freesound_user"
+				android:textAlignment="center" />
+			<TextView
+				android:id="@+id/textViewLicense"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:autoLink="all"
+				android:textAlignment="center" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

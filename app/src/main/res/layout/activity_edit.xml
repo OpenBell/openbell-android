@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2016-17 Open Bell Project, and others
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Contributors:
+  WLD-Sebastian R
+  WLD-Paul J
+  WLD-Muj H
+
+  Updated: 2/15/17 4:33 AM
+  -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TableLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal">
+		<TableRow
+			android:layout_marginTop="25dp">
+			<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="end"
+				android:text="@string/bell_name_name"
+				android:textStyle="normal|bold" />
+			<EditText
+				android:id="@+id/edittext_bellname"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/bell_name_hint"
+				android:inputType="textPersonName" />
+		</TableRow>
+		<TableRow
+			android:layout_marginTop="@dimen/card_margin">
+			<TextView
+				android:id="@+id/textView5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/bell_name_code"
+				android:textAlignment="center"
+				android:textStyle="normal|bold" />
+			<EditText
+				android:id="@+id/edittext_belluuid"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/bell_code_hint" />
+		</TableRow>
+		<TableRow
+			android:layout_marginTop="@dimen/card_margin">
+			<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:gravity="end"
+				android:text="@string/bell_name_enabled"
+				android:textStyle="normal|bold" />
+			<Switch
+				android:id="@+id/switch_bellenabled"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end"
+				android:paddingStart="10dp" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

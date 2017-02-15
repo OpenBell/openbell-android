@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "605876570633",
+    "firebase_url": "https://openbell-d4ba8.firebaseio.com",
+    "project_id": "openbell-d4ba8",
+    "storage_bucket": "openbell-d4ba8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605876570633:android:60e631e8ac2cf914",
+        "android_client_info": {
+          "package_name": "org.openbell.sdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605876570633-aodktvp7fskvpdlb5mdd48cs4lhkdur7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNlRW5huijqqwrTNEeVnd9x9yf2-a7Cw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

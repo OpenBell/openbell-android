@@ -1,0 +1,3 @@
+Note on Firebase API keys:
+
+If you wish to compile the project for your own server you will need to use your Google account to login to the Firebase console and download a new google-services.json and place it in the same directory as this file.

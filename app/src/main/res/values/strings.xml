@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Copyright (c) 2016-17 Open Bell Project, and others
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Contributors:
+  WLD-Sebastian R
+  WLD-Paul J
+  WLD-Muj H
+
+  Updated: 2/15/17 5:44 AM
+  -->
+<resources>
+	<string name="app_name">OpenBell</string>
+	<string name="app_description">Open Source door bell project, from button to app</string>
+	<string name="app_version">Version</string>
+	<string name="action_about">About</string>
+	<string name="action_add">Add bell</string>
+	<string name="action_scan">Scan code</string>
+	<string name="action_settings">Settings</string>
+	<string name="conectivity_problem">No connection, please go online to do this</string>
+	<string name="delete_confirm_text">Are you sure you want to delete this bell?</string>
+	<string name="back_confirmation_dialog">Leave without saving changes?</string>
+	<string name="delete_ok">Bell deleted</string>
+	<string name="delete_fail">Could not delete bell</string>
+	<string name="bell_added">Bell added</string>
+	<string name="bell_updated">Bell updated</string>
+	<string name="bell_enabled">Bell enabled</string>
+	<string name="bell_disabled">Bell disabled</string>
+	<string name="button_discard">Discard</string>
+	<string name="bell_name_name">Name</string>
+	<string name="bell_name_code">Bell Code</string>
+	<string name="bell_name_hint">(e.g. front door)</string>
+	<string name="bell_code_hint">Scan code or enter manually</string>
+	<string name="bell_name_enabled">Enabled</string>
+	<string name="uuid_exist">The bell scanned already exist, do you want to edit it?</string>
+	<string name="no_name">Please enter a name</string>
+	<string name="no_bell_code">Please enter a Bell Code</string>
+	<string name="existing_bell_change_error">Can\'t change existing Bell Code</string>
+	<string name="bell_register_problem">There was a problem registering the bell, please try again</string>
+	<string name="api_url">https://openbell.org/openbellapi.php</string>
+	<string name="no_code_error">A notification was received with no Bell Code</string>
+	<string name="no_code_title">Bell error</string>
+	<string name="activity_edit_title">Edit bells</string>
+	<string name="activity_settings_title">Settings</string>
+	<string name="activity_about_title">About</string>
+	<string name="freesound_user">bellsound by Corsica_S - https://www.freesound.org/people/Corsica_S/</string>
+	<string name="freesound_text">This application uses these sounds from freesound:</string>
+	<string name="home_page">Homepage: https://openbell.org</string>
+	<string name="source_code">Source Code: https://github.com/OpenBell</string>
+	<string name="license_name">Licensed under Apache License Version 2.0</string>
+	<string name="preferences_tone">Notification sound</string>
+</resources>

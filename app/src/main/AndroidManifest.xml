@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="org.openbell.sdk">
+
+	<!-- Internet access permission -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<!-- To play background notifications -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<application
+		android:name=".OpenBell"
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<activity
+			android:name=".ActivitySplash"
+			android:label="@string/app_name"
+			android:theme="@style/SplashTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".ActivityMain"
+			android:label="@string/app_name" />
+
+		<activity
+			android:name=".ActivityEditBell"
+			android:label="@string/activity_edit_title" />
+
+		<activity
+			android:name=".ActivityAbout"
+			android:label="@string/activity_about_title" />
+
+		<activity
+			android:name=".ActivitySettings"
+			android:theme="@style/SettingsTheme" />
+
+		<activity
+			android:name="com.google.zxing.client.android.CaptureActivity"
+			android:theme="@style/ScanTheme"
+			android:windowSoftInputMode="stateAlwaysHidden"
+			tools:replace="android:theme" />
+
+		<!-- Set custom default icon. This is used when no icon is set for incoming[]\ notification messages.
+		See README(https://goo.gl/l4GJaQ) for more. -->
+		<meta-data
+			android:name="com.google.firebase.messaging.default_notification_icon"
+			android:resource="@mipmap/ic_launcher" />
+
+		<!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+		notification message. See README(https://goo.gl/6BKBk7) for more. -->
+		<meta-data
+			android:name="com.google.firebase.messaging.default_notification_color"
+			android:resource="@color/color_openbell" />
+
+		<service
+			android:name=".MyFirebaseMessagingService">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+
+		<service
+			android:name=".MyFirebaseInstanceIDService">
+			<intent-filter>
+				<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest>
